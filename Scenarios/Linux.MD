@@ -51,4 +51,14 @@ Linux Interview Scenarios :
 
 		 grep "^$(date -d -1hour +'%Y-%m-%d %H')" test.logs | grep 'exception'
 		 
+		 
+
+4. Compress/ZIP older than 20 days logs of Apache ??
+
+      cd /tomcat directory
+find . \( -type d ! -name . -prune  \) -o -name 'BARE01_DLY_MKT_*' -mtime +20 -exec mv {} archive/
+
+
+		 
+		 
 	
